@@ -50,7 +50,7 @@ app.get('/', (_req, res) => {
 <body>
   <h1>WebGuard API</h1>
   <p class="ok">● Running</p>
-  <p>This is the backend API. Open the app UI at <a href="http://localhost:5173">http://localhost:5173</a>.</p>
+  <p>This is the backend API. Open the app UI at <a href="${process.env.CLIENT_URL}">${process.env.CLIENT_URL}</a>.</p>
   <div class="card">
     <strong>Useful endpoints</strong>
     <ul>
