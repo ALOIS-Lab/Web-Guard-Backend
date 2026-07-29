@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Web Guard — website availability monitoring API",
   "main": "src/index.js",
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "scripts": {
     "start": "node src/index.js",
     "dev": "node --watch src/index.js"
@@ -15,8 +18,8 @@
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "jsonwebtoken": "^9.0.2",
-    "node-cron": "^3.0.3",
-    "nodemailer": "^6.9.16",
+    "node-cron": "^4.6.0",
+    "nodemailer": "^9.0.3",
     "web-push": "^3.6.7"
   }
 }
