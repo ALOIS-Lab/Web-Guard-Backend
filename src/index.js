@@ -20,11 +20,11 @@ const { verifyMailer, isMailConfigured } = require('./services/mailer');
 const { vapidPublicKey } = require('./services/notify');
 
 const app = express();
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT;
 
 app.use(
   cors({
-    origin: process.env.CLIENT_URL || 'http://localhost:5173',
+    origin: process.env.CLIENT_URL,
     credentials: true,
   })
 );
